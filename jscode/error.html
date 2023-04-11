@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+</head>
+<body>
+    <p>Please input a number between 5 and 10</p>
+    <input type="text" id="demo">
+    <button type="button" onclick="myFunction()">TestError</button>
+    <p id="pp"></p>
+    <script>
+        function myFunction(){
+            var message,x;
+            message=document.getElementById('pp');
+            message.innerHTML="";
+            x=document.getElementById('demo').value;
+            try{
+                if(x=="") throw "empty";
+                if(isNaN(x)) throw "not a number";
+                x=Number(x);
+                if(x<5) throw "a number is too low";
+                if(x>10) throw  "a number is too high";
+            }
+            catch(err){
+                message.innerHTML="input is "+err;
+            }
+        }
+    </script>
+</body>
+</html>

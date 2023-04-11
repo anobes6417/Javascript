@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input form</title>
+    <script>
+        function fn(){
+            var str=document.getElementById('text1').value;
+            alert("The username is:"+str);
+            var str=document.getElementById('text2').value;
+            alert("The password is:"+str);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="text1" placeholder="Username">
+    <br><br>
+    <input type="text" id="text2" placeholder="Password">
+    <br><br>
+    <button onclick="fn()" id="res">ClickMe</button>
+</body>
+</html>

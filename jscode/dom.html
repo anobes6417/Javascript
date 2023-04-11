@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM</title>
+
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+    <h2 class="title">Bonsa</h2>
+        <button onclick="buttonClick()" class="changeColor">ClickMe</button>
+    <ul class="name">
+        <li>JS</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>PHP</li>
+        <li>NODE</li>
+    </ul>
+    <input type="text" class="list">
+    <script>
+        const userlist=document.querySelector('.name');
+const listInput=document.querySelector('.list');
+const addListBtn=document.querySelector('.buttonClick');
+
+addListBtn.addEventListener('click', function(){
+const newLi=document.querySelector("Li");
+const liContent=document.createTextNode(listInput.value);
+newLi.appendChild(liContent);
+userlist.appendChild(newLi);
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice</title>
+</head>
+<body>
+    <h2>JavaScript Array Methods</h2>
+    <h1>SPLICE</h1>
+    <p>splice method is used to add an element to array, it returns
+        when elementis deleted from an array </p>
+    <button onclick="myfunction()">Splice</button>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <script>
+        var pr=['html','css','js','php'];
+        document.getElementById('d1').innerHTML='Old Element:'+pr;
+        function myfunction(){
+            var rem=pr.splice(1,1,'Bootstrap','nodeJS');
+            document.getElementById('d2').innerHTML='New Element:'+pr;
+            document.getElementById('d3').innerHTML='Removed Element:'+rem;
+            
+        }
+    </script>
+</body>
+</html>

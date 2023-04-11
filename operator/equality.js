@@ -1,0 +1,7 @@
+// strict equality(type+value)
+console.log(2===2)
+console.log('2'===2)
+// lose equality(value)
+console.log(2==2)
+console.log('2'==2)
+console.log(true==1)

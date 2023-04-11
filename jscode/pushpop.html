@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>push & pop</title>
+</head>
+<body>
+    <h2>Javascript Array method</h2>
+    <h2>PUSH & POP</h2>
+
+    <p><strong>POP</strong> is a method that removes an element from the last of an array, but 
+        <strong>PUSH</strong> is a method that is add an element into array at the end</p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <button onclick="myfunction()">PUSH</button>
+        <script>
+            var fr=['pineapple','mango','abucado','apple'];
+            document.getElementById('demo').innerHTML=fr;
+            fr.unshift('orange');
+            document.getElementById('demo').innerHTML=fr;
+
+
+
+            /*PUSH
+            document.getElementById('demo').innerHTML=fr;
+            function myfunction(){
+                document.getElementById('demo').innerHTML=fr.push('orange');
+
+                document.getElementById('demo1').innerHTML=fr;
+
+
+            }*/
+
+            /*POP
+            document.getElementById('demo').innerHTML=fr.pop();
+            document.getElementById('demo1').innerHTML=fr;*/
+            
+
+        </script>
+</body>
+</html>
